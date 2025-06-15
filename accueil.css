@@ -137,7 +137,7 @@ label{
     margin: 10px;
 }
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 1000px) {
     header{
         height: 30px;
     }
