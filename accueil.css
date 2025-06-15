@@ -143,6 +143,7 @@ label{
     }
     footer{
         height: 20px;
+        padding-top: 10px;
     }
     h1{
         font-size: 20px;
