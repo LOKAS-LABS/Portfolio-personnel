@@ -120,8 +120,40 @@ label{
     list-style-type: none;
     font-size: 20px;
 }
+
 .l1{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.l1 li{
+    margin-bottom: 20px;
+}
+
+.nom{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.brnv{
+   background-color:lightblue;
+   height: 10px;
+   width: 100%;
+   border-radius: 5px;
+}
+
+.nv{
+    background-color: blue;
+   height: 10px;
+   border-radius: 5px;
+}
+
+.percent{
+    float: right;
+    font-size: 14px;
+    color: black;
 }
 #voir1, #voir2{
     border: 2px solid cyan;
