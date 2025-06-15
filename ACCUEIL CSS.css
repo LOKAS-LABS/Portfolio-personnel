@@ -1,0 +1,164 @@
+#aba {
+    color: black;
+    font-family: 'Century Gothic', Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Century Gothic', 'Consolas', 'Times New Roman', Times, 'Comic Sans MS', serif;
+    text-align: justify;
+    padding: 0%;
+    margin: 0% ;
+}
+
+header{
+    height:100px;
+    background-color: aquamarine;
+}
+
+footer{
+    height:40px;
+    padding-top: 30px;
+    background-color: aquamarine;
+    border-top: 2px solid cyan;
+}
+
+nav{
+    width: 100% ;
+    background-color: lightblue;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+}
+
+.onglet:hover{
+    background-color: gold;
+    transition: all 0.3s ease-in-out;
+}
+.table{
+    display: table;
+    margin: 0 auto;
+}
+
+#p1{
+    text-align: center;
+    font-size: 200%;
+}
+
+#img1{
+    text-align: center;
+}
+
+
+#lok{
+    color: blue;
+    font-weight: bold;
+}
+
+.f1{
+    text-align: center;
+}
+
+.b2{
+    text-align: center;
+}
+
+.c1{
+    color: blue;
+}
+
+label{
+    color: blue;
+}
+
+.tzone{
+    padding: 10px;
+    border: 2px solid cyan ;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: lightskyblue;
+}
+
+#bouton{
+    background-color: lightskyblue;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#nom{
+    margin-top: 1cm;
+}
+
+#sp2{
+    color: blue;
+    font-weight: bold;
+}
+.b3{
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+}
+.l1{
+    list-style-type: none;
+}
+#voir1, #voir2{
+    border: 2px solid cyan;
+    background-color: lightskyblue;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cadre{
+    border: 2px solid cyan;
+    padding: 1px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    header{
+        height: 30px;
+    }
+    footer{
+        height: 20px;
+    }
+    h1{
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+    body{
+        font-size: 10px;
+    }
+    .tzone{
+        font-size: 10px;
+    }
+}

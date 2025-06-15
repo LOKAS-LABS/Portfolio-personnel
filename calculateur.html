@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de prêt hypothécaire</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CALCUL DE PRÊT HYPOTHECAIRE</h1>
+  <form id="form">
+    <label for="montant">Montant du prêt :</label>
+    <input type="number" id="montant" required>
+
+    <label for="taux">Taux d'intérêt annuel (%) :</label>
+    <input type="number" id="taux" step="0.01" required>
+
+    <label for="duree">Durée en années :</label>
+    <input type="number" id="duree" required>
+
+    <button id="calculer">Calculer</button>
+  </form>
+  <p id="resultat"></p>
+
+  <script>
+    const form = document.getElementById('form');
+    const montantInput = document.getElementById('montant');
+    const tauxInput = document.getElementById('taux');
+    const dureeInput = document.getElementById('duree');
+    const resultat = document.getElementById('resultat');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const montant = parseFloat(montantInput.value);
+      const taux = parseFloat(tauxInput.value) / 100 / 12;
+      const duree = parseInt(dureeInput.value) * 12;
+
+      if (montant <= 0) {
+        alert('Le montant du prêt doit être positif.');
+        return;
+      }
+
+      if (taux < 0) {
+        alert('Le taux d\'intérêt annuel doit être positif.');
+        return;
+      }
+
+      if (duree <= 0) {
+        alert('La durée du prêt doit être positive.');
+        return;
+      }
+
+      const paiementMensuel = montant * (taux * Math.pow(1 + taux, duree)) / (Math.pow(1 + taux, duree) - 1);
+      resultat.innerText = `Paiement mensuel : ${paiementMensuel.toFixed(2)} €`;
+    });
+  </script>
+</body>
+</html>
+
