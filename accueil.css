@@ -166,7 +166,7 @@ label{
 .cadre{
     border: 2px solid cyan;
     padding: 1px;
-    margin: 10px;
+    margin: 5px;
 }
 
 @media screen and (max-width: 800px) {
